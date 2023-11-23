@@ -4,10 +4,10 @@ env:
   # Configure the following environment variables
   PROJECT_NAME: "demo-project-2" # Name of the project; append environment (dev, stag, or prod)
   ENV: "dev"
-  AWS_REGION: "ap-south-1"
+  AWS_REGION: "ap-southeast-1"
   VPC_CIDR_BLOCK: "10.0.0.0/16" # CIDR block for the Virtual Private Cloud (VPC)
   PUBLIC_SUBNET_1_CIDR_BLOCK: "10.0.1.0/24"
-  PUBLIC_SUBNET_1_AVAIL_ZONE: "ap-south-1a"
+  PUBLIC_SUBNET_1_AVAIL_ZONE: "ap-southeast-1a"
   INSTANCE_TYPE: "t2.micro" # Define the instance type (e.g., t2.micro, m5.large)
   STACK_NAME: "64bit Amazon Linux 2023 v4.0.6 running Python 3.9"
   EC2_KEY_NAME: "demo-project-dev-kp" # Name of the key pair created manually
