@@ -18,7 +18,7 @@ env:
  # DJANGO_SETTINGS_MODULE: "config.settings"
 #  DATABASE_URL: "sacsacsdvc"
   #AWS_S3_ACCESS_KEY_ID: "sfsvsdvsv"
- # AWS_S3_SECRET_ACCESS_KEY: "dcsfdfvdsvf"
+ # AWS_S3_SECRET_ACCESS_KEY: "dcsfdfvdscvf"
   
 
 
