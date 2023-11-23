@@ -53,7 +53,7 @@ module "s3_bucket_deployments" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
   # Set the name for the S3 bucket
-  bucket = "${var.project_name}-${var.env}-deployments"
+  bucket = "${var.project_name}-${var.env}-deployments5"
 }
 
 
