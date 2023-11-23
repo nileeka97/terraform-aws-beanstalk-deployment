@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-
+/*
 terraform {
   backend "s3" {
     bucket = "ixd-terraform-tfstate-bucket2"
@@ -15,7 +15,7 @@ terraform {
     region = "us-east-1"
   }
 }
-
+*/
 
 provider "aws" {
 
