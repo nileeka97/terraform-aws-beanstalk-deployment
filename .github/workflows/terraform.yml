@@ -2,7 +2,7 @@ name: Terraform Deployment
 
 env:
   # Configure the following environment variables
-  PROJECT_NAME: "demo-project-5ddsc" # Name of the project; append environment (dev, stag, or prod)
+  PROJECT_NAME: "demo-project-5vcddsc" # Name of the project; append environment (dev, stag, or prod)
   ENV: "dev"
   AWS_REGION: "ap-northeast-2"
   VPC_CIDR_BLOCK: "10.0.0.0/16" # CIDR block for the Virtual Private Cloud (VPC)
