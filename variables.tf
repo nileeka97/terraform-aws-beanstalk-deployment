@@ -6,7 +6,7 @@ variable "public_subnet_1_cidr_block" {} # CIDR block for the public subnet 1
 variable "public_subnet_1_avail_zone" {} # Availability zone for the public subnet 1
 variable "stack_name" {}                 # Elastic Beanstalk solution stack name
 variable "instance_type" {}              # EC2 instance type
-variable "ec2_keypair" {}                # EC2 key pair for SSH access, create a keypair manually
+#variable "ec2_keypair" {}                # EC2 key pair for SSH access, create a keypair manually
 
 /*
 # Environment Variables
