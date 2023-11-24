@@ -2,23 +2,23 @@ name: Terraform Deployment
 
 env:
   # Configure the following environment variables
-  PROJECT_NAME: "demo-project-5vcddsc" # Name of the project; append environment (dev, stag, or prod)
+  PROJECT_NAME: "demo-project" # Name of the project; append environment (dev, stag, or prod)
   ENV: "dev"
-  AWS_REGION: "ap-northeast-2"
+  AWS_REGION: "ap-south-1"
   VPC_CIDR_BLOCK: "10.0.0.0/16" # CIDR block for the Virtual Private Cloud (VPC)
   PUBLIC_SUBNET_1_CIDR_BLOCK: "10.0.1.0/24"
-  PUBLIC_SUBNET_1_AVAIL_ZONE: "ap-northeast-2a"
+  PUBLIC_SUBNET_1_AVAIL_ZONE: "ap-south-1a"
   INSTANCE_TYPE: "t2.micro" # Define the instance type (e.g., t2.micro, m5.large)
   STACK_NAME: "64bit Amazon Linux 2023 v4.0.6 running Python 3.9"
   EC2_KEY_NAME: "demo-project-dev-kp2" # Name of the key pair created manually
-#  USE_AWS_S3: "true"
-#  AWS_STORAGE_BUCKET_NAME: "lk-ixd-attendance-system-dev-media"
-#  AWS_S3_REGION_NAME: "us-east-1"
-#  DJANGO_ALLOWED_HOSTS: "*"
- # DJANGO_SETTINGS_MODULE: "config.settings"
-#  DATABASE_URL: "sacsacsdvc"
-  #AWS_S3_ACCESS_KEY_ID: "sfsvsdvsv"
- # AWS_S3_SECRET_ACCESS_KEY: "dcsfdfvdscvf"
+  USE_AWS_S3: "true"
+  AWS_STORAGE_BUCKET_NAME: "lk-ixd-attendance-system-dev-media"
+  AWS_S3_REGION_NAME: "us-east-1"
+  DJANGO_ALLOWED_HOSTS: "*"
+  DJANGO_SETTINGS_MODULE: "config.settings"
+  DATABASE_URL: "sacsacsdvc"
+  AWS_S3_ACCESS_KEY_ID: "sfsvsdvsv"
+  AWS_S3_SECRET_ACCESS_KEY: "dcsfdfvdscvf"
   
 
 

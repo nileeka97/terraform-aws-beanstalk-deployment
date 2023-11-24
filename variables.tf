@@ -8,7 +8,7 @@ variable "stack_name" {}                 # Elastic Beanstalk solution stack name
 variable "instance_type" {}              # EC2 instance type
 variable "ec2_keypair" {}                # EC2 key pair for SSH access, create a keypair manually
 
-/*
+
 # Environment Variables
 variable "DATABASE_URL" {}             # Database connection string
 variable "USE_AWS_S3" {}               # Flag to indicate whether to use AWS S3 for storage
@@ -18,4 +18,4 @@ variable "AWS_STORAGE_BUCKET_NAME" {}  # Name of the AWS Storage media bucket
 variable "AWS_S3_REGION_NAME" {}       # Region name for AWS S3 media bucket
 variable "DJANGO_ALLOWED_HOSTS" {}     # Allowed hosts for Django application
 variable "DJANGO_SETTINGS_MODULE" {}   # Django settings module for the application
-*/
+

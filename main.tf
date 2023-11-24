@@ -70,7 +70,7 @@ resource "aws_elastic_beanstalk_environment" "beanstalk-env" {
   name                = "${var.project_name}-${var.env}-env"
   application         = aws_elastic_beanstalk_application.beanstalk-app.name
   solution_stack_name = var.stack_name
-/*
+
   # Define dynamic settings for environment variables
   dynamic "setting" {
     for_each = {
@@ -90,7 +90,7 @@ resource "aws_elastic_beanstalk_environment" "beanstalk-env" {
       name      = setting.key
       value     = setting.value
     }
-  }*/
+  }
 
   # Set VPC related settings
   setting {
