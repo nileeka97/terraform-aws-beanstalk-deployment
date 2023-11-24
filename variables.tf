@@ -12,10 +12,10 @@ variable "ec2_keypair" {}                # EC2 key pair for SSH access, create a
 # Environment Variables
 variable "DATABASE_URL" {}             # Database connection string
 variable "USE_AWS_S3" {}               # Flag to indicate whether to use AWS S3 for storage
-variable "AWS_S3_ACCESS_KEY_ID" {}     # Access key ID of the IAM user with permission to AWS S3 media bucket
-variable "AWS_S3_SECRET_ACCESS_KEY" {} # Secret access key of the IAM user with permission to AWS S3 media bucket
+#variable "AWS_S3_ACCESS_KEY_ID" {}     # Access key ID of the IAM user with permission to AWS S3 media bucket
+#variable "AWS_S3_SECRET_ACCESS_KEY" {} # Secret access key of the IAM user with permission to AWS S3 media bucket
 variable "AWS_STORAGE_BUCKET_NAME" {}  # Name of the AWS Storage media bucket
-variable "AWS_S3_REGION_NAME" {}       # Region name for AWS S3 media bucket
+#variable "AWS_S3_REGION_NAME" {}       # Region name for AWS S3 media bucket
 variable "DJANGO_ALLOWED_HOSTS" {}     # Allowed hosts for Django application
 variable "DJANGO_SETTINGS_MODULE" {}   # Django settings module for the application
 
