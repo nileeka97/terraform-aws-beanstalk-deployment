@@ -146,14 +146,14 @@ resource "aws_elastic_beanstalk_environment" "beanstalk-env" {
     value     = module.security-group.security_group_id
   }
 
-/*
+
   setting {
     namespace = "aws:autoscaling:launchconfiguration"
     name      = "EC2KeyName"
     value     = var.ec2_keypair
   }
 
-*/
+
 
   # Set CloudWatch logs related settings
   setting {
