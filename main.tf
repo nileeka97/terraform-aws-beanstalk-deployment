@@ -53,7 +53,7 @@ module "s3_bucket_deployments" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
   # Set the name for the S3 bucket
-  bucket = "${var.project_name}-${var.env}-deployments5"
+  bucket = "${var.project_name}-${var.env}-deployments"
 }
 
 
@@ -76,10 +76,10 @@ resource "aws_elastic_beanstalk_environment" "beanstalk-env" {
     for_each = {
       DATABASE_URL             = var.DATABASE_URL
       USE_AWS_S3               = var.USE_AWS_S3,
-      #AWS_S3_ACCESS_KEY_ID     = var.AWS_S3_ACCESS_KEY_ID,
+      AWS_S3_ACCESS_KEY_ID     = var.AWS_S3_ACCESS_KEY_ID,
       AWS_S3_SECRET_ACCESS_KEY = var.AWS_S3_SECRET_ACCESS_KEY,
       AWS_STORAGE_BUCKET_NAME  = var.AWS_STORAGE_BUCKET_NAME,
-      AWS_S3_REGION_NAME       = var.AWS_S3_REGION_NAME,
+    #  AWS_S3_REGION_NAME       = var.AWS_S3_REGION_NAME,
       DJANGO_SETTINGS_MODULE   = var.DJANGO_SETTINGS_MODULE,
       DJANGO_ALLOWED_HOSTS     = var.DJANGO_ALLOWED_HOSTS,
       # Add other environment variables here
