@@ -67,3 +67,6 @@ jobs:
               -var "AWS_S3_REGION_NAME=env.AWS_S3_REGION_NAME" \
               -var "DJANGO_ALLOWED_HOSTS=${{ env.DJANGO_ALLOWED_HOSTS }}" \
               -var "DJANGO_SETTINGS_MODULE=${{ env.DJANGO_SETTINGS_MODULE }}" 
+
+        - name: Terraform Destroy
+          run: terraform destroy -auto-approve     
