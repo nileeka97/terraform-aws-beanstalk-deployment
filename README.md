@@ -11,7 +11,7 @@ This Terraform project sets up an AWS Elastic Beanstalk environment along with a
      terraform {
       backend "s3" {
          bucket = "ixd-terraform-tfstate-bucket"
-         key    = "terraform-aws-beanstalk-deployment/terraform.tfstate"
+         key    = "add your key here" #ex: terraform-aws-beanstalk-deployment/terraform.tfstate
          region = "us-east-1"
       }
    }
