@@ -25,7 +25,7 @@ env:
 on:
   push:
     branches:
-      - master
+      - master-pause
 
 jobs:
     terraform-build:

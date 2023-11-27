@@ -2,29 +2,37 @@
 
 This Terraform project sets up an AWS Elastic Beanstalk environment along with a VPC, security group, and S3 bucket for media storage. Follow the steps below to deploy the infrastructure.
 
-## Prerequisites
-
-- AWS account with appropriate permissions.
-- Terraform installed on your local machine.
 
 ## Initial Setup
 
-1. **Create S3 Bucket for Media Files**
+1. **Add s3 backend key to `providers.tf` file**
+
+     ```hcl
+     terraform {
+      backend "s3" {
+         bucket = "ixd-terraform-tfstate-bucket"
+         key    = "terraform-aws-beanstalk-deployment/terraform.tfstate"
+         region = "us-east-1"
+      }
+   }
+     ```
+
+2. **Create S3 Bucket for Media Files**
 
    - Manually create an S3 bucket to store media files. Note the bucket name for use in later steps.
 
-2. **Add User for Media Bucket Access**
+3. **Add User for Media Bucket Access**
 
    - Create an IAM user with S3 access and provide necessary permissions to access the media bucket.
    - Retrieve the access key ID and secret access key for this user.
+   - add relevent env vars to terraform.yml file - USE_AWS_S3, AWS_STORAGE_BUCKET_NAME, AWS_S3_REGION_NAME, AWS_S3_ACCESS_KEY_ID and AWS_S3_SECRET_ACCESS_KEY
 
 
-3. **Create `terraform.tfvars` File**
-
-   - Create a `terraform.tfvars` file in the project root and set values for the required variables:
+4. **Add other varibales also to `terraform.yml` file**
 
      ```hcl
      project_name = "your-project-name"
+     env = "dev"
      vpc_cidr_block = "10.0.0.0/16"
      public_subnet_1_cidr_block = "10.0.1.0/24"
      public_subnet_1_avail_zone = "us-east-1a"
