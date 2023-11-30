@@ -61,7 +61,7 @@ module "s3_bucket_deployments" {
 
 # Define Elastic Beanstalk Application and Environment
 resource "aws_elastic_beanstalk_application" "beanstalk-app" {
-  name        = var.project_name
+  name        = "${var.project_name}-${var.env}"
   description = "${var.project_name}-${var.env} Elastic Beanstalk Application"
 }
 
